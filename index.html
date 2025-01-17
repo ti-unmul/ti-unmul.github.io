@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <ul class="nav-logo">
                 <li>
-                    <img src="/assets/logo.png" alt="logo" >Logo<a href="index.php"></a>
-                    <p>UKM TI UNMUL</p>
+                    <img src="/assets/logo.png" alt="logo" href="index.php">
+                </li>
+                <li>
+                    <p>UKM</p>
+                    <p>TI</p>
+                    <p>UNMUL</p>
                 </li>
             </ul>
-            <ul>
-                <li><a href="index.php">Bergabung</a></li>
-                <li><a href="index.php">Berita</a></li>
-                <li><a href="index.php">Merchandise</a></li>
-                <li><a href="index.php">Tentang Kami</a></li>
-                <li><a href="index.php">Kontak</a></li>
+            <ul class="nav-menu">
+                <li href="index.php">Bergabung</li>
+                <li href="index.php">Berita</li>
+                <li href="index.php">Merchandise</li>
+                <li href="index.php">Tentang Kami</li>
+                <li href="index.php">Kontak</li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <content>
+        <section class="announcement">
+            <content class="bg-announcement">
+                <img src="assets/bg-announcement.JPG" alt="bg-announcement">
+            </content>
+            <content class="text-announcement">
                 <h1>UKM TAEKWONDO INDONESIA</h1>
                 <h2>JOIN US</h2>
             </content>
@@ -42,59 +50,58 @@
                 Lihat Selengkapnya
             </button>
         </section>
-        <section>
-            <h3>
-                Kunjungi Juga
-            </h3>
-            <content>
-                <ul>
-                    <li>
-                        <img src="#" alt="Instagram" >
-                        <p>InstagramL</p>
-                    </li>
-                    <li>
-                        <img src="#" alt="Tiktok" >
-                        <p>Tiktok</p>
-                    </li>
-                    <li>
-                        <img src="#" alt="Youtube" >
-                        <p>Youtube</p>
-                    </li>
-                </ul>
-            </content>
-        </section>
+        
     </main>
     <footer>
-        <div>
-            <img src="/assets/logo.png" alt="logo">
-            <p>UKM TI UNMUL</p>
-        </div>
-        <div>
-            <ul>
-                <li><a href="index.php">Bergabung</a></li>
-                <li><a href="index.php">Berita</a></li>
-                <li><a href="index.php">Merchandise</a></li>
-                <li><a href="index.php">Tentang Kami</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li><a href="index.php">Instagram</a></li>
-                <li><a href="index.php">Tiktok</a></li>
-                <li><a href="index.php">Youtube</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li><a href="index.php">Whatsapp</a></li>
-                <li><a href="index.php">E-mail</a></li>
-            </ul>
-        </div>
-        <div>
-            <p>Bersama, Berani, Berprestasi</p>
-            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Scroll to Top</button>
-            <span>&copy; 2023</span>
-        </div>
+        <section class="top-footer">
+            <div>
+                <span>
+                    Kunjungi Juga
+                </span>
+            </div>
+            <content>
+                <li>
+                    <img src="assets/icons/instagram.svg" alt="Instagram"  href="https://www.instagram.com/taekwondo_unmul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    <p>Instagram</p>
+                </li>
+                <li>
+                    <img src="assets/icons/tiktok.svg" alt="Tiktok"  href="https://www.tiktok.com/@taekwondo_unmul?lang=id-ID">
+                    <p>Tiktok</p>
+                </li>
+                <li>
+                    <img src="assets/icons/youtube.svg" alt="Youtube" href="https://m.youtube.com/@UKMTIUNMUL">
+                    <p>Youtube</p>
+                </li>
+            </content>
+        </section>
+        <section class="center-footer">
+            <div>
+                <img src="/assets/logo.png" alt="logo">
+                <p>UKM TI UNMUL</p>
+            </div>
+            <div>
+                <li href="index.php">Bergabung</li>
+                <li href="index.php">Berita</li>
+                <li href="index.php">Merchandise</li>
+                <li href="index.php">Tentang Kami</li>
+            </div>
+            <div>
+                <li href="index.php">Instagram</li>
+                <li href="index.php">Tiktok</li>
+                <li href="index.php">Youtube</li>
+            </div>
+            <div>
+                <li href="index.php">Whatsapp</li>
+                <li href="index.php">E-mail</li>
+            </div>
+        </section>
+        <section class="bottom-footer">
+            <div>
+                <p>Bersama, Berani, Berprestasi</p>
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Scroll to Top</button>
+                <span>&copy; 2023</span>
+            </div>
+        </section>
     </footer>
 </body>
 </html>

@@ -1,6 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --main-color: #112952;
+    --secondary-color: #f2e3e3;
+    --tertiary-color: #d9bd56;
+    --optional-color: #e30102;
+    --main-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+}
+
 body {
-    background-color: #f2e3e3;
-    font-family: Arial, sans-serif;
+    background-color: var(--main-color);
+    font-family: var(--main-font);
     margin: 0;
     padding: 0;
+    cursor: default;
 }
+
+header {
+    background-color: var(--secondary-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-logo {
+    display: flex;
+    gap: 5px;
+    margin-left: 30px;
+    padding: 0;
+}
+
+.nav-logo img {
+    width: 48px;
+    height: 48px;
+}
+
+.nav-logo li {
+    list-style: none;
+}
+
+.nav-logo li p {
+    margin: 0;
+    font-weight: 1000;
+    font-size: 12px;
+    color: var(--main-color);
+}
+
+.nav-logo :hover {
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    margin: 0 30px 0 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.nav-menu :hover {
+    transition: 0.5s ease;
+    color: var(--optional-color);
+    cursor: pointer;
+}
+
+.announcement {
+    margin-bottom: 10%;
+    position: relative;
+    color: var(--secondary-color);
+    overflow: hidden;
+    height: 500px;
+    text-align: center;
+}
+
+.text-announcement {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.announcement h1 {
+    font-size: 3rem;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+
+.announcement h2 {
+    position: relative;
+    top: -5px;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.bg-announcement img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 40%;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer section {
+    padding: 20px 0;
+}
+
+footer .top-footer {
+    background-color: #bd3333;
+    padding: 10px 0;
+}
+
+footer .top-footer span {
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer .top-footer content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .top-footer li {
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .top-footer img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+footer .center-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    padding: 20px 0;
+}
+
+footer .center-footer div {
+    flex: 1;
+    min-width: 150px;
+}
+
+footer .center-footer img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer .center-footer p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer .center-footer li {
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+footer .bottom-footer {
+    background-color: #23272b;
+    padding: 10px 0;
+}
+
+footer .bottom-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer .bottom-footer button {
+    background-color: #6a1b9a;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+footer .bottom-footer button:hover {
+    background-color: #4a148c;
+}
+
+footer .bottom-footer span {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+
+
