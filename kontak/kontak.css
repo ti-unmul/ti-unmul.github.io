@@ -1,0 +1,51 @@
+.navbar, .nav-logo, .nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.kepala {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 0;
+}
+
+.kepala h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.kepala img {
+    width: 350px;
+    height: 350px;
+}
+
+.kontak {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 0;
+}
+
+.info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.infolanjut {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0;
+}
